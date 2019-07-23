@@ -1,0 +1,10 @@
+Scanner in = new Scanner(System.in);
+        
+        System.out.print("Ingrese un número: ");
+        int numero = in.nextInt();
+        
+        if(numero % 2 == 0){
+            System.out.println("Es par");
+        } else {
+            System.out.println("Es impar");
+        }
