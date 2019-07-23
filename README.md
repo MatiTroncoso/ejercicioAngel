@@ -14,19 +14,18 @@ Scanner teclado = new Scanner(System.in);
 
         for (int i = 0; i < 10; i++) {
 
-            System.out.print("NÚMERO DE FACTURA: ");
-            numeroDeFactura = teclado.nextInt();
+            //System.out.print("NÚMERO DE FACTURA: ");
+            //numeroDeFactura = teclado.nextInt();
 
             System.out.print("IMPORTE: $");
             importe = teclado.nextFloat();
             suma = suma + importe;
-            
-            if(importe>ventaMayor){
+
+            if (importe > ventaMayor) {
                 ventaMayor = importe;
                 facturaMayor = numeroDeFactura;
             }
-                       
-            
+
             System.out.println("METODO DE PAGO \nEfectivo [E] \nTarjeta [T]");
             System.out.print("... ");
             metodoDePago = teclado.next();
@@ -98,14 +97,14 @@ Scanner teclado = new Scanner(System.in);
 
         }
 
-        int porcentajeEfectivo = (int) (10 - ventasTarjeta) / 10 * 100;
-        int porcentajeTarjeta = (int) (10 - ventasEfectivo) / 10 * 100;
+        int porcentajeEfectivo = (int) ((10 - ventasTarjeta) / 10 * 100);
+        int porcentajeTarjeta = (int) ((10 - ventasEfectivo) / 10 * 100);
 
         System.out.print("Promociones: " + promociones);
         System.out.println("");
-        System.out.print("Ventas en efectivo: %" + porcentajeEfectivo);
+        System.out.print("Ventas en efectivo: " + porcentajeEfectivo + "%");
         System.out.println("");
-        System.out.print("Ventas con tarjeta: %" + porcentajeTarjeta);
+        System.out.print("Ventas con tarjeta: " + porcentajeTarjeta + "%");
         System.out.println("");
         System.out.print("Mayor venta: $" + ventaMayor + " - N° de factura: " + facturaMayor);
         System.out.println("");
