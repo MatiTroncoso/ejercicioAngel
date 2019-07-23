@@ -14,8 +14,8 @@ Scanner teclado = new Scanner(System.in);
 
         for (int i = 0; i < 10; i++) {
 
-            //System.out.print("NÚMERO DE FACTURA: ");
-            //numeroDeFactura = teclado.nextInt();
+            System.out.print("NÚMERO DE FACTURA: ");
+            numeroDeFactura = teclado.nextInt();
 
             System.out.print("IMPORTE: $");
             importe = teclado.nextFloat();
