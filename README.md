@@ -1,4 +1,4 @@
-# ejerciciosRutaTres
+# ejerciciosRutaTresSinArrays
 Ejercicios propuestos para Ruta 3
 
 Scanner teclado = new Scanner(System.in);
